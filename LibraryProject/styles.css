@@ -9,9 +9,8 @@ body{
 .main-container{
    display: grid;
    grid-template-columns: repeat(4, minmax(0, 1fr));
-   grid-template-rows: repeat(2, minmax(0, 1fr));
    bordeR: 10px solid blue;
-   height: 100%;
+    height: 50%;
     padding: 1rem;
 }
 
@@ -27,11 +26,11 @@ body{
 
 .modal{
     border: 2px solid green;
-    width: 90%;
-    height: 90%;
+    width: 50%;
+    height: 50%;
     background: #eee;
     position: absolute;
     z-index: 10;
-    display: none;
+    
 
 }

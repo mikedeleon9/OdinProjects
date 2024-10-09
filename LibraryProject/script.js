@@ -1,5 +1,5 @@
 const mainContainer = document.querySelector('.main-container');
-
+const body = document.querySelector('body');
 const myLibrary = [];
 
 function Book(title, author, pages, bookRead){
@@ -29,14 +29,18 @@ addBookToLibrary(sapiens);
 addBookToLibrary(ninetyEightyFour)
 
 
+const newBookButton = document.createElement('button');
+const modalElement = document.createElement('dialog');
+
+body.appendChild(newBookButton)
+body.appendChild(modalElement)
+
 myLibrary.forEach(book => {
     const bookCard = document.createElement('div');
-    const newBookButton = document.createElement('button');
-    const modalElement = document.createElement('div');
-    
+ 
 
     newBookButton.textContent = "New Book"
-    newBookButton.onclick = createNewEntry();
+    newBookButton.onclick = () => createNewEntry(modalElement);
 
     bookCard.classList.add('book-card');
     bookCard.innerHTML = `
@@ -49,10 +53,10 @@ myLibrary.forEach(book => {
 
 
     mainContainer.appendChild(bookCard);
-    bookCard.appendChild(newBookButton);
-    bookCard.appendChild(modalElement);
+    
+   
 })
 
-function createNewEntry(){
- 
+function createNewEntry(dialog){
+ dialog.showModal();
 }
