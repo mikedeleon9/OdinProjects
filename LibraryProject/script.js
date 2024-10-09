@@ -31,9 +31,15 @@ addBookToLibrary(ninetyEightyFour)
 
 const newBookButton = document.createElement('button');
 const modalElement = document.createElement('dialog');
+const form = document.createElement('form');
 
 body.appendChild(newBookButton)
 body.appendChild(modalElement)
+modalElement.appendChild(form)
+
+form.innerHTML = `
+ 
+`;
 
 myLibrary.forEach(book => {
     const bookCard = document.createElement('div');
