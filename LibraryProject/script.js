@@ -28,6 +28,9 @@ addBookToLibrary(theSunAlsoRise)
 
 myLibrary.forEach(book => {
     const bookCard = document.createElement('div');
+    const newBookButton = document.createElement('button');
+    newBookButton.textContent = "New Book"
+
     bookCard.classList.add('book-card');
     bookCard.innerHTML = `
     ${book.title}
@@ -35,4 +38,5 @@ myLibrary.forEach(book => {
     ${book.pages}
     `
     mainContainer.appendChild(bookCard);
+    bookCard.appendChild(newBookButton)
 })

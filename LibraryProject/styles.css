@@ -3,8 +3,17 @@ body{
     padding: 0;
     box-sizing: border-box;
     height: 100vh;
+   
 }
 
+.main-container{
+   display: grid;
+   grid-template-columns: repeat(4, minmax(0, 1fr));
+   grid-template-rows: repeat(2, minmax(0, 1fr));
+   bordeR: 10px solid blue;
+   height: 100%;
+   justify-content: center;
+}
 .book-card{
     border: 2px solid red;
     padding: 10px;
