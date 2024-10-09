@@ -38,7 +38,10 @@ body.appendChild(modalElement)
 modalElement.appendChild(form)
 
 form.innerHTML = `
- 
+ <h2>Add New Book </h2>
+ <form method="dialog">
+ <label for="title">Title: </label>
+ <input type="text" id="title" name="title"><br><br>
 `;
 
 myLibrary.forEach(book => {

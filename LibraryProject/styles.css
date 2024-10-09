@@ -9,13 +9,12 @@ body{
 .main-container{
    display: grid;
    grid-template-columns: repeat(4, minmax(0, 1fr));
-   bordeR: 10px solid blue;
     height: 50%;
     padding: 1rem;
 }
 
 .book-card{
-    border: 2px solid red;
+    border: 2px solid black;
     padding: 10px;
     position: relative;
     display: flex;
@@ -34,3 +33,14 @@ body{
     
 
 }
+
+form{
+  
+   
+   
+}
+
+form > h2{
+    text-align: center;
+}
+
