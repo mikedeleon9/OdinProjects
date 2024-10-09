@@ -33,9 +33,9 @@ myLibrary.forEach(book => {
 
     bookCard.classList.add('book-card');
     bookCard.innerHTML = `
-    ${book.title}
-    ${book.author}
-    ${book.pages}
+   <div> Title: ${book.title} </div>
+   <div> Author:  ${book.author} </div>
+   <div> Number of Pages: ${book.pages} </div>
     `
     mainContainer.appendChild(bookCard);
     bookCard.appendChild(newBookButton)
