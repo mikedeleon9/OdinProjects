@@ -12,10 +12,26 @@ body{
    grid-template-rows: repeat(2, minmax(0, 1fr));
    bordeR: 10px solid blue;
    height: 100%;
-   justify-content: center;
+    padding: 1rem;
 }
+
 .book-card{
     border: 2px solid red;
     padding: 10px;
-    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    border: 2px solid green;
+    width: 90%;
+    height: 90%;
+    background: #eee;
+    position: absolute;
+    z-index: 10;
+    display: none;
+
 }
