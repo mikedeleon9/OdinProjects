@@ -70,18 +70,23 @@ form.innerHTML = `
 
 
 
-myLibrary.forEach(book => {
+myLibrary.forEach((book, index) => {
     const bookCard = document.createElement('div');
  
 
     newBookButton.textContent = "New Book"
     newBookButton.onclick = () => createNewEntry(modalElement);
-
+    
     bookCard.classList.add('book-card');
+    bookCard.setAttribute('data-index', index);
     bookCard.innerHTML = `
+   <div class="card-content">
    <div> Title: ${book.title} </div>
    <div> Author:  ${book.author} </div>
    <div> Number of Pages: ${book.pages} </div>
+   </div>
+   <button class="remove-button" ">Remove Book</button>
+   
     `;
 
     modalElement.classList.add('modal')
@@ -89,9 +94,17 @@ myLibrary.forEach(book => {
 
     mainContainer.appendChild(bookCard);
     
+    const removeButton = bookCard.querySelector('.remove-button');
+    removeButton.addEventListener('click', ()=> removeBook(index, bookCard));
    
 })
 
 function createNewEntry(dialog){
  dialog.showModal();
 }
+
+function removeBook(index, bookCard){
+  myLibrary.pop(index, 1);
+  bookCard.remove();
+}
+
