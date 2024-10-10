@@ -48,7 +48,17 @@ form > h2{
     text-align: center;
 }
 
-.form-grid{
+.form-grid {
+   display: grid;
+   align-items: center;
+   justify-content: left;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+
+.form-grid input[type="text"]{
    
-    border: 2px solid blue;
+    
+
 }

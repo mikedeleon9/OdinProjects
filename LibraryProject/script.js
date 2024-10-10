@@ -42,24 +42,28 @@ form.innerHTML = `
 
    <div class="form-grid">
        
-        
+            <div>
             <label for="title">Title:</label>
             <input type="text" id="title" name="title"><br><br>
-            
+            </div>
+            <div>
             <label for="author">Author:</label>
             <input type="text" id="author" name="author"><br><br>
-            
+            </div>
+            <div>
             <label for="pages">Pages:</label>
             <input type="text" id="pages" name="pages"><br><br>
-            
+            </div>
+
+            <div class="radio-group">
             <label>Read?</label>
             <input type="radio" id="read-yes" name="read" value="yes">
             <label for="read-yes">Yes</label>
             <input type="radio" id="read-no" name="read" value="no">
             <label for="read-no">No</label><br><br>
-            
-            <input type="submit" value="Submit">
-      
+           
+            </div>
+             <input type="submit" value="Submit">
     </div>
  `;
 
