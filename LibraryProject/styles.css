@@ -43,13 +43,12 @@ h1{
 
 }
 
-form{
-  
-   
-   
-}
 
 form > h2{
     text-align: center;
 }
 
+.form-grid{
+   
+    border: 2px solid blue;
+}
