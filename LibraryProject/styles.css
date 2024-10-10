@@ -63,7 +63,16 @@ form > h2{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;                         
     width: 100%;
     text-align: center;
+}
+
+.read-button{
+    
+    
+    border: none;
+    cursor: pointer;
+    padding: 10px;
 }

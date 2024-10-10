@@ -84,6 +84,7 @@ myLibrary.forEach((book, index) => {
    <div> Title: ${book.title} </div>
    <div> Author:  ${book.author} </div>
    <div> Number of Pages: ${book.pages} </div>
+   <button class="read-button">${book.bookRead}</button>
    </div>
    <button class="remove-button" ">Remove Book</button>
    
@@ -96,6 +97,14 @@ myLibrary.forEach((book, index) => {
     
     const removeButton = bookCard.querySelector('.remove-button');
     removeButton.addEventListener('click', ()=> removeBook(index, bookCard));
+   
+    const readButton = bookCard.querySelector('.read-button');
+    readButton.addEventListener('click', () => {
+       
+      book.bookRead === "Read" ?
+     readButton.style.background = 'green' :  readButton.style.background = "red";
+    });
+
    
 })
 
