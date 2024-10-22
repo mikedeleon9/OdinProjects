@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro Topnav', sans-serif;
+  }
+  
+  .top-bar{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-container{
+    width: 100%;
+    height: 100vh;
+    
+   
+  }
+  .upper-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    padding: 5px 10px;
+    white-space: nowrap;
+  }
+  
+  
+  .top-bar-left-list{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .top-bar-right-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .input-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-container > input{
+    padding: 10px 12px;
+    border-radius: 9999px;
+    border: 1px solid grey;
+  }
+  
+  .input-container > input::placeholder{
+    font-size: 1rem;
+  }
+  
+   .fa-magnifying-glass{
+    position: absolute;
+   right:0;
+     margin-right: 8px;
+  }
+  
+  .top-bar-left-list  span {
+   
+    margin-left: 2px;
+  }
+  
+  .top-bar-right-list span {
+    margin-right: 10px;
+    color: rgb(151, 99, 246);
+  }
+  
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+  
+  image{
+    position:absolute;
+    left: 0;
+  }
+  
+  .right-side{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 10px;
+  }
+  
+  .log-in-div{
+   
+    display: flex;
+    align-items: center;
+    border-radius: 9999px;
+    background: #D9EEE1;
+    
+    
+  }
+  
+  .sign-up{
+    color: #eee;
+    padding: 12px 15px;
+    border-radius: 9999px;
+    background: #04AA6D;
+    
+  
+  }
+  
+  .log-in{
+    background: #D9EEE1;
+    padding:  0 20px;
+     border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+  }
+  
+  .lower-bar{
+    color: #eee;
+    width: 100%;
+    background: #282A35;
+    height: 30px;
+     overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lower-bar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+  }
+  
+  .lower-bar-list li{
+    text-align: center;
+    padding: 0 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lower-bar-list li:hover{
+    background: #08090a;
+    
+  }
+  
+  
